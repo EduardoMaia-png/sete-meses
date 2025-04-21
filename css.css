@@ -1,0 +1,46 @@
+/* Imagens decorativas nas laterais */
+.decor {
+    position: fixed;
+    width: 180px;
+    z-index: 1;
+    opacity: 0.95;
+    pointer-events: none;
+  }
+  
+  .decor-esquerda {
+    left: 10px;
+  }
+  
+  .decor-direita {
+    right: 10px;
+  }
+  
+  .decor-esquerda-1 {
+    top: 80px;
+  }
+  .decor-esquerda-2 {
+    top: 480px;
+  }
+  
+  .decor-direita-1 {
+    top: 200px;
+  }
+  .decor-direita-2 {
+    top: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .decor {
+      width: 100px;
+      opacity: 0.7;
+    }
+  
+    .decor-esquerda {
+      left: 2px;
+    }
+  
+    .decor-direita {
+      right: 2px;
+    }
+  }
+  

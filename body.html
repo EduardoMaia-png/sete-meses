@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta para o Amor da Minha Vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    
+
+/* Decoração lateral nas bordas da carta */
+.decor-esquerda,
+.decor-direita,
+.decor-direita-cima,
+.decor-esquerda-cima {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+  opacity: 0.8;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.decor-esquerda {
+  left: 20px;
+}
+
+.decor-direita {
+  right: 20px;
+}
+.decor-esquerda-cima {
+  left: 20px;
+  
+}
+
+.decor-direita-cima {
+  right: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  .decor-esquerda,
+  .decor-direita {
+    width: 90px;
+    opacity: 0.5;
+  }
+
+  .decor-esquerda {
+    left: 10px;
+  }
+
+  .decor-direita {
+    right: 10px;
+  }
+}
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(fotos/eu\ e\ meu\ amo.jpg) no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+      color: #f5e9ff;
+      overflow-x: hidden;
+    }
+
+    /* TELA INICIAL */
+    .intro {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(to bottom right, #1a001f, #3a1a40);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .scroll-image {
+      width: 300px;
+      max-width: 80%;
+      animation: pulse 2s infinite alternate;
+    }
+
+    .open-button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      font-family: 'Playfair Display', serif;
+      background-color: #dcb5ff;
+      border: none;
+      border-radius: 10px;
+      color: #3a1a40;
+      cursor: pointer;
+      box-shadow: 0 0 10px #dcb5ff;
+      transition: transform 0.3s ease;
+    }
+
+    .open-button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.03); }
+    }
+
+    /* CONTAINER DA CARTA */
+    .container {
+      background-color: rgba(10, 10, 15, 0.85);
+      border: 1px solid #a678d1;
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 0 25px rgba(190, 150, 255, 0.3);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5rem auto;
+      display: none;
+    }
+
+    .images-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .images-column img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .text {
+      flex: 1;
+      white-space: pre-wrap;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0;
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .titulo1 {
+      font-size: 2.5rem;
+      color: #9673b4;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px #b87eff;
+    }
+
+    .assinatura {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      text-align: center;
+      color: #e0c3ff;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .images-column {
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      .images-column img {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TELA INICIAL COM PERGAMINHO -->
+  <div class="intro" id="intro">
+    <img class="scroll-image" src="fotos/pngtree-beautiful-scroll-purple-png-image_10014099.png" alt="Pergaminho">
+    <button class="open-button" onclick="abrirPergaminho()">Abrir Carta</button>
+  </div>
+
+  <!-- CONTEÚDO DA CARTA -->
+  <div class="container" id="carta">
+    
+<div class="text" id="textoCarta">
+  <div class="titulo1">Carta para o Amor da Minha Vida</div>
+
+<div id="conteudoDigitado">
+  Sete meses do nosso sempre
+  
+  Meu amor,
+  
+  Hoje faz exatamente sete meses desde o dia mais feliz da minha vida.
+  E mesmo assim, ainda me pego sem saber por onde começar…
+  Como expressar, com palavras limitadas, algo tão imenso quanto ter você comigo?
+  
+  Se eu pudesse te dar hoje mais um abraço apertado, segurar tua mão, te mostrar todas as minhas coisas favoritas,
+  Se eu pudesse olhar nos teus olhos e fazer mais uma daquelas declarações que brotam do coração…
+  Ainda assim, nada seria suficiente para explicar o que você significa para mim.
+  
+  Sete meses de namoro.
+  Sete meses de amor, de riso, de espera, de sonho.
+  E todo esse tempo não foi o bastante para que eu encontrasse uma única palavra que dissesse "eu te amo" como você merece ouvir.
+  Eu poderia te dedicar todas as músicas do mundo, e mesmo assim, você não saberia a medida exata da felicidade que sinto quando nossos olhos se encontram.
+  
+  Desde aquele “sim”, passamos a ser parte um do outro.
+  Você virou meu estilo de vida, minha rotina favorita, a parte mais bonita de mim.
+  Passo os dias contando as horas para te ver.
+  E quando não posso, escrevo sobre você — porque escrever sobre você virou meu hobby favorito.
+  Escrever sobre o que sinto por você me faz viver muitas vidas.
+  E todas elas terminam em você.
+  
+  A maior beleza que conheço no mundo é o jeito como você me permitiu viver o amor.
+  Amo te amar.
+  Amo ser o autor das poesias que tentam descrever a arte que é o teu sorriso,
+  a música suave da tua voz,
+  o universo inteiro que dança dentro do teu olhar,
+  e esse teu cheiro… doce, leve, de bebê — que me acalma como um lar.
+  
+  Eu amo escutar músicas de romance e lembrar de você.
+  Amo a tua companhia.
+  Você faz qualquer coisa virar entretenimento.
+  Conversar sobre um peido fedido com você vira um evento inesquecível — e eu passaria horas só rindo do nada contigo.
+  
+  Sou completamente apaixonado pela tua intensidade, pela tua forma tão sincera de sentir o mundo.
+  Passaria a eternidade escutando suas ideias malucas e geniais sobre tudo.
+  Adotaria infinitos gatinhos ao teu lado.
+  Sonho com nossos filhos — e quero que todos eles tenham tua doçura ao falar, tua capacidade de amar, tua bondade, teu jeitinho dengoso quando está comigo.
+  
+  Eu durmo e sonho com você. Literalmente.
+  Você está em todos os meus sonhos.
+  E quando penso em algo que me faz feliz, é o seu nome que me vem primeiro.
+  Quando me sinto cansado, é a paz que você me traz que me dá descanso.
+  
+  Enquanto eu existir, você nunca estará sozinha.
+  Onde você for, lá estarei.
+  Enquanto eu estiver neste mundo, vou cuidar de você, me preocupar contigo, cantar pra você, amar você.
+  E quando eu deixar de existir fisicamente… eu ainda vou te amar.
+  No vento que sopra nossas músicas,
+  nas cartas de amor que escrevi,
+  nos nossos planos de família,
+  nos detalhes do cotidiano que fomos criando juntos.
+  
+  Você é primavera em pele,
+  banho quente em dia chuvoso,
+  ar-condicionado no verão,
+  coberta no inverno.
+  Você é música.
+  Você é o próprio amor.
+  Você é esperança, alegria, saudade, ternura.
+  Você é meu pedido em todos os aniversários.
+  
+  Se me restasse um único minuto de vida, eu o viveria com você.
+  E se me restarem mil vidas, quero todas ao teu lado.
+  Quero viver contigo como se cada dia fosse o último.
+  Quero te dar todo o meu amor, retribuir a paixão que me domina e me transforma.
+  Hoje é o nosso dia.
+  Mesmo que não possamos estar fisicamente juntos, quero que saiba:
+  Eu estou aí contigo, o tempo todo, em pensamento, coração, alma e sonho.
+  
+  Feliz dia para nós, meu amor.
+  Espero te ver logo.
+  E viver a vida do nosso jeitinho…
+  Esse jeito só nosso, que o mundo jamais entenderia.
+  
+  Com todo o amor que existe em mim,
+  Teu, para sempre
+</div>
+
+<div class="assinatura">Eu te bubabinbo 💜</div>
+</div>
+
+
+  </div>
+
+  <script>
+    function abrirPergaminho() {
+      const intro = document.getElementById("intro");
+      const carta = document.getElementById("carta");
+const texto = document.getElementById("conteudoDigitado");
+
+      // Fade out da introdução
+      intro.style.opacity = "1";
+      intro.style.transition = "opacity 2s ease";
+      intro.style.opacity = "0";
+
+      setTimeout(() => {
+        intro.style.display = "none";
+        carta.style.display = "flex";
+
+        // Inicia o efeito de digitação
+        typeWriter(texto);
+      }, 2000);
+    }
+
+    function typeWriter(element) {
+      const text = element.innerText;
+      element.innerText = "";
+      element.style.opacity = 1;
+      let i = 0;
+
+      const interval = setInterval(() => {
+        if (i < text.length) {
+          element.innerText += text.charAt(i);
+          i++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 20);
+    }
+  </script>
+
+<!-- Player de Música -->
+<audio id="musica" loop>
+  <source src="Lonely God - Marlboro Nights (Official Music Video).mp3" type="audio/mp3">
+  Seu navegador não suporta áudio HTML5.
+</audio>
+
+<button id="musicaBtn" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  background-color: #dcb5ff;
+  border: none;
+  border-radius: 10px;
+  color: #3a1a40;
+  cursor: pointer;
+  box-shadow: 0 0 10px #dcb5ff;
+  z-index: 9999;
+  display: none;
+">
+  🔈 Música
+</button>
+
+<script>
+  const musica = document.getElementById("musica");
+  const musicaBtn = document.getElementById("musicaBtn");
+
+  function abrirPergaminho() {
+    const intro = document.getElementById("intro");
+    const carta = document.getElementById("carta");
+    const texto = document.getElementById("textoCarta");
+
+    intro.style.opacity = "1";
+    intro.style.transition = "opacity 2s ease";
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
+      intro.style.display = "none";
+      carta.style.display = "flex";
+      typeWriter(texto);
+      musica.play().catch((e) => console.log("Erro ao tocar música:", e));
+      musicaBtn.style.display = "block";
+    }, 2000);
+  }
+
+  musicaBtn.addEventListener("click", () => {
+    if (musica.paused) {
+      musica.play();
+      musicaBtn.innerText = "🔈 Música";
+    } else {
+      musica.pause();
+      musicaBtn.innerText = "🔇 Pausada";
+    }
+  });
+
+  function typeWriter(element) {
+    const text = element.innerText;
+    element.innerText = "";
+    element.style.opacity = 1;
+    let i = 0;
+
+    const interval = setInterval(() => {
+      if (i < text.length) {
+        element.innerText += text.charAt(i);
+        i++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 20);
+  }
+</script>
+
+<!-- Decoração lateral fora da carta -->
+<img src="fotos/gatinho fofinh9o.webp" class="decor-esquerda" alt="decor 1">
+<img src="fotos/capivara fofinha.webp" class="decor-direita" alt="decor 2">
+
+
+
+</body>
+</html>
